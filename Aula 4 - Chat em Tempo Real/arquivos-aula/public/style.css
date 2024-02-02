@@ -1,0 +1,134 @@
+@font-face {
+  font-family: 'Trench';
+  font-weight: 400;
+  src: url('./assets/trench100free.otf');
+}
+
+:root {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  font-family: 'montserrat';
+  word-wrap: break-word;
+}
+
+body {
+  height: 100dvh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  background: linear-gradient(rgb(0, 140, 255), rgba(1,1,1,1));
+}
+
+header {
+  font-family: 'Trench';
+  background-color: #040e29;
+  color: #fff;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 1rem 0;
+  font-size: 1.4rem;
+  & > img {
+    max-height: 3rem;
+    margin-right: 0.2rem;
+  }
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Adicionado para centralizar o conteúdo */
+  width: 80%; /* Largura em porcentagem da janela */
+  margin: 0 auto; /* Adicionado para centralizar a main na página */
+  flex-grow: 1;
+}
+
+#mensagens {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  min-height: 84vh;
+  max-height: 84vh;
+  width: 100%; /* Largura em porcentagem da janela */
+  max-width: 80%; /* Largura máxima em porcentagem da janela */
+  background-color: #eaeaea;
+  background-image: url('./assets/transferir.jpeg');
+  background-size: cover; /* Isso garante que a imagem cubra todo o elemento */
+  background-position: center; /* Isso centraliza a imagem */
+  background-repeat: no-repeat; 
+  flex-grow: 1;
+  font-size: 0.9rem;
+  position: relative;
+  overflow-y: auto;
+  word-wrap: break-word;
+  margin: 0 auto; /* Adicionado para centralizar #mensagens na main */
+  border: 2px solid rgb(0, 0, 0);
+  border-radius: 20px;
+  font-size: 120%;
+}
+
+
+#mensagens::-webkit-scrollbar {
+  width: 8px;
+  background-color: #cfcfcf;
+}
+
+#mensagens::-webkit-scrollbar-thumb {
+  background-color: #0400da;
+}
+
+.mensagem {
+  background-color: #39b0fa;
+ 
+  color: #000000;
+  width: 85%;
+  margin: 1rem 0.5rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+}
+
+#mensagens > .mensagem:last-of-type {
+  background-color: #82cbf8;
+}
+
+#envio-mensagens {
+  padding-top: 0.5rem;
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: flex-end;
+  min-width: 70%;
+  max-height: 3rem;
+  & > input {
+    flex-grow: 1;
+    padding: 0.5rem 0.3rem;
+  }
+  & > button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    background-color: #040e29;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 12px;
+    margin-left: 0.5rem;
+    &:hover {
+      background-color: #0b266f;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  main {
+    width: 90%;
+  }
+}
