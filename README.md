@@ -47,3 +47,10 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos durante o intensivão 
 </details>
 
 Sinta-se à vontade para explorar os códigos e experimentar cada projeto. Espero que encontre algo fascinante aqui!
+
+<details>
+<summary>**Certificado** 🎥 (Clique para expandir)</summary>
+
+  ![Certificado](https://github.com/WillianNog/JS-Hashtag-4-em-1/blob/main/Certificado.png)
+
+</details>
