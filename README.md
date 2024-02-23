@@ -48,6 +48,7 @@ Bem-vindo ao repositório dos meus projetos desenvolvidos durante o intensivão 
 
 Sinta-se à vontade para explorar os códigos e experimentar cada projeto. Espero que encontre algo fascinante aqui!
 
+--------
 <details>
 <summary>**Certificado** 🎥 (Clique para expandir)</summary>
 
